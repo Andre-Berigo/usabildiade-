@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function triangulo(){
+            var catetoA = parseInt(prompt("insira o valor do cateto A"))
+            var catetoB = parseInt(prompt("insira o valor do cateto B"))
+            var hipotenusa = Math.sqrt(Math.pow(catetoA, 2) + Math.pow(catetoB, 2))
+            alert("o valor da hipotenusa eh de " + hipotenusa)
+        }
+    </script>
+</head>
+
+<body>
+        <thead>
+            <h1>Calculando a hipotenusa</h1>
+        </thead>
+        <input type="button" onclick="triangulo()" value="clique aqui">
+</body>
+
+</html>

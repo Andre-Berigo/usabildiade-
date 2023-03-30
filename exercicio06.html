@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function esfera() {
+            var raio = parseInt(prompt("insira o valor do raio da esfera"))
+            var comprimento = 2 * raio * Math.PI
+            var area = Math.PI * Math.pow(raio, 2)
+            var volume = 4/3 * Math.PI * Math.pow(raio, 3)
+            var comprimento = comprimento.toFixed(2)
+            var area = area.toFixed(2) 
+            var volume = volume.toFixed(2)
+            alert("dados da esfera \n Comprimento: " + comprimento + "cm, area: " + area + "cm , volume: " + volume+ "cm cubicos")
+        }
+    </script>
+</head>
+
+<body>
+    <thead>
+        <h1>Dados de uma esfera</h1>
+    </thead>
+    <input type="button" onclick="esfera()" value="clique aqui">
+</body>
+
+</html>
