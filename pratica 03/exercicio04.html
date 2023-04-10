@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bhaskara() {
+            var a, b, c, x, x1, x2, inicio;
+            inicio = prompt("iniciar? sim ou nao");
+            while (inicio == "sim") {
+                a = prompt("informe o valor de a ")
+                b = prompt("informe o valor de b ")
+                c = prompt("informe o valor de c ")
+
+                if (a == 0 && b == 0 && c == 0) {
+                    alert("igualdade confirmada 0 == 0")
+                } else {
+                    if (a == 0 && b == 0 && c != 0) {
+                        alert("Coeficientes informados incorretamentes")
+                    } else {
+                        if (a == 0 && b != 0) {
+                            alert("essa eh uma equacao de primeiro grau")
+                            x = -c / b;
+                            alert("valor de x= " + x)
+                        } else
+                            if (a != 0) {
+                                alert("essa eh uma equacao de segundo grau")
+                                delta = (Math.pow(b, 2)) - (4 * a * c)
+                                if (delta < 0) {
+                                    alert("essa equacao NAO possui raizes reais (delta < 0), delta= " + delta)
+                                } else {
+                                    if (delta == 0) {
+                                        alert("Esta equacao possui duas raizes reais iguais")
+                                        x = -b / (2 * a);
+                                        alert("valor de x1 e x2 = " + x);
+                                    } else {
+                                        if (delta > 0) {
+                                            alert("essa equacao possui duas raizes reais diferentes")
+                                            x1 = (-b + (Math.sqrt(delta))) / (2 * a);
+                                            x2 = (-b - (Math.sqrt(delta))) / (2 * a);
+                                            x1 = x1.toFixed(2)
+                                            x2 = x2.toFixed(2)
+                                            alert("delta = " + delta + ", x1= " + x1 + ", x2= " + x2)
+                                        }
+
+                                    }
+                                }
+                            }
+                    }
+                }
+                inicio = prompt("Novo calculo? sim ou nao");
+            }
+            alert("exercicio encerrado!!!")
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Calculando Bhaskara</h1>
+    <button onclick="bhaskara()">Calcular Bhaskara</button>
+</body>
+
+</html>

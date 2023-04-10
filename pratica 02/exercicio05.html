@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function folhaPagamento(){
+            var codigo, horasTrabalhadas, valorBruto;
+            codigo = prompt("informe o codigo do colaborador")
+            codigo = parseInt(codigo);
+            horasTrabalhadas = prompt("informe a quantidade de horas trabalhadas")
+           
+            switch(codigo) {
+                case 1:
+                    valorBruto = horasTrabalhadas * 45.78
+                  
+                    alert("Codigo: " +codigo + " \n Colaborador: Ana, \n valor bruto: R$" + valorBruto );
+                    break;
+                case 2:
+                valorBruto = horasTrabalhadas * 60
+              
+                    alert("Codigo: " +codigo + " \n Colaborador: Bruna, \n valor bruto: R$" + valorBruto );
+                    break;
+                case 3:
+                valorBruto = horasTrabalhadas * 38.99
+              
+                    alert("Codigo: " +codigo + " \n Colaborador: Carlos, \n valor bruto: R$" + valorBruto );
+                    break;
+                case 4:
+                valorBruto = horasTrabalhadas * 45.78
+               
+                    alert("Codigo: " +codigo + " \n Colaborador: Diogo,  \n valor bruto: R$" + valorBruto );
+                    break;
+                case 5:
+                valorBruto = horasTrabalhadas * 45.78
+                
+                    alert("Codigo: " +codigo + " \n Colaborador: Ester, \n valor bruto: R$" + valorBruto );
+                    break;
+                default: alert("codigo invalido");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Folha de pagamento
+    </h1>
+    <button onclick="folhaPagamento()"> Consultar Folha </button>
+</body>
+
+</html>

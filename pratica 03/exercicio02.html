@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function media() {
+            var numeroNovo = 0, numero, media, inicio, soma, contador = 0;
+
+            inicio = prompt("iniciar?");
+
+            while (inicio != "nao") {
+                numero = prompt("numero: " + (contador + 1));
+                numero = parseFloat(numero, 2);
+                numeroNovo = numero + numeroNovo
+                contador++;
+                inicio = prompt("sim - para add outro numero // nao para sair");
+            };
+            media = numeroNovo / contador;
+            alert("soma dos numeros: " + numeroNovo + " \n quantidade de numeros somados: " + contador + " \n media dos numeros: " + media);
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Media infinita
+    </h1>
+    <button onclick="media()">calcular media</button>
+
+
+</body>
+
+</html>

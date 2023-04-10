@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tabela() {
+            var codigo;
+            codigo = prompt("informe o codigo do produto")
+            codigo = parseInt(codigo);
+            switch(codigo) {
+                case 1:
+                    alert("sapato RS99,99");
+                    break;
+                case 2:
+                    alert("bolsa RS103,89");
+                    break;
+                case 3:
+                    alert("Camisa RS49,98");
+                    break;
+                case 4:
+                    alert("Calca RS89,72");
+                    break;
+                case 5:
+                    alert("Blusa RS97,35");
+                    break;
+                default: alert("codigo invalido");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Loja
+    </h1>
+    <button onclick="tabela()"> Consultar Tabela </button>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function imc() {
+            var peso, altura, imc
+            peso = prompt("digite o peso", "ex: 80.5")
+            altura = prompt("digite a altura", "ex: 1.70")
+            imc = peso / Math.pow(altura, 2)
+            imc2 = imc.toFixed(0)
+            alert("IMC= " + imc2)
+            if (imc2 < 20) {
+                alert("Abaixo do peso")
+            } else if (imc2 >= 20 && imc2 < 25) {
+                alert("Normal")
+            } else if (imc2 >= 25 && imc2 < 30) {
+                alert("Sobrepeso")
+            } else if (imc2 >= 30 && imc2 < 35) {
+                alert("Obesidade grau I")
+            } else if (imc2 >= 35 && imc2 < 40) {
+                alert("Obesidade grau II")
+            } else if (imc2 >= 40) {
+                alert("Obesidade grau III")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Calculo de IMC
+    </h1>
+    <button onclick="imc()"> calcular IMC </button>
+</body>
+
+</html>

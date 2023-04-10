@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function maior() {
+            var numeroNovo = 0, numero, inicio, maior;
+
+            inicio = prompt("iniciar?");
+
+            while (inicio != "nao") {
+                numero = prompt("numero: ");
+                numero = parseFloat(numero, 2);
+
+                if (numero > numeroNovo) {
+                    maior = numero;
+                }
+                inicio = prompt("sim - para add outro numero // nao para sair");
+            };
+
+            alert("o maior numero digitado foi: " + maior);
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Maior Numero
+    </h1>
+    <button onclick="maior()">Maior Numero</button>
+
+
+</body>
+
+</html>

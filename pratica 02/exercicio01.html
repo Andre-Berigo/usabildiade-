@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function compra() {
+            var pago, produto, resultado, troco50 = 0, troco20 = 0, troco10 = 0, troco5 = 0, troco2 = 0, troco1 = 0;
+            produto = prompt("Informe o valor do produto", "digite o valor do produto")
+            pago = prompt("informe a quantia paga", "digite o valor pago")
+            if (produto > pago) {
+                alert("a quantia paga eh insuficiente para realizar a compra!")
+            }
+            if (produto <= pago) {
+                resultado = pago - produto;
+                alert("seu troco eh: \n R$" + resultado);
+
+                while (resultado != 0) {
+                    if (resultado >= 50) {
+                        while (resultado >= 50) {
+                            resultado = resultado - 50;
+                            troco50++;
+                        }
+                    } else if (resultado >= 20) {
+                        while (resultado >= 20) {
+                            resultado = resultado - 20;
+                            troco20++;
+                        }
+                    } else if (resultado >= 10) {
+                        while (resultado >= 10) {
+                            resultado = resultado - 10;
+                            troco10++;
+                        }
+                    } else if (resultado >= 5) {
+                        while (resultado >= 5) {
+                            resultado = resultado - 5;
+                            troco5++;
+                        }
+                    } else if (resultado >= 2) {
+                        while (resultado >= 2) {
+                            resultado = resultado - 2;
+                            troco2++;
+                        }
+                    } else if (resultado < 2) {
+                        while (resultado < 2) {
+                            troco1++;
+                        }
+
+                    }
+                }
+
+
+                alert("notas 50: " + troco50 + ", \n notas 20: " + troco20
+                    + ", \n notas 10: " + troco10 + ", \n notas 5: " + troco5
+                    + ", \n notas 2: " + troco2 + ", \n notas 1: " + troco1);
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>
+        Maquina de Refrigerante
+    </h1>
+    <button onclick="compra()">Comprar</button>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funcao() {
+            var x, valor1, valor2, valor3, valor4, valor5, valor6
+            x = prompt("insira o valor de X")
+
+            valor1 = 2 * x + 2;
+            if (x < -2) {
+                valor2 = true
+            }else{valor2 = false};
+
+            if (x == 3) {
+                valor3 = true
+            }else{valor3 = false};
+            if (x >= -2 && x < 3) {
+                valor4 = true
+            }else{valor4 = false};
+
+            valor5 = -1 * x;
+            if (x >= 3) {
+                valor6 = true
+            }else{valor6 = false}
+
+            alert("valor 1= " + valor1 + "\n valor 2= " + valor2 + "\n valor 3= " + valor3 + "\n valor 4= " + valor4 + "\n valor 5= " + valor5 + "\n valor 6= " + valor6)
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>
+        Funcao de X
+    </h1>
+    <button onclick="funcao()">calcular X </button>
+</body>
+
+</html>

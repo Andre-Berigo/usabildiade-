@@ -1,0 +1,27 @@
+.cabecalho {
+    background-color: rgb(98, 160, 219) !important;
+    border: none;
+
+}
+
+table {
+    background-color: azure;
+}
+
+td {
+    min-width: 200px;
+}
+
+tr:hover {
+    background-color: #ffffff !important;
+    color: #FF4500;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #8b9dc3;
+}
+
+tr:nth-child(odd) {
+    background-color: #dfe3ee;
+}

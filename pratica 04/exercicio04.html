@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="exercicio04.css" media="screen" />
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr class="cabecalho">
+            <td>NOME ALUNO</td>
+            <td>P1</td>
+            <td>P2</td>
+            <td>T1</td>
+            <td>TOTAL NOTA</td>
+            <td>FALTAS</td>
+        </tr>
+        <tr>
+            <td onclick="msg()">Ana</td>
+            <td onclick="notaProva1()">29</td>
+            <td onclick="notaProva2()">17</td>
+            <td onclick="notaProva3()">27</td>
+            <td onclick="notaTotal()">73</td>
+            <td onclick="faltas()">0</td>
+        </tr>
+        <tr>
+            <td onclick="msg()">Gisele</td>
+            <td onclick="notaProva1()">28</td>
+            <td onclick="notaProva2()">18</td>
+            <td onclick="notaProva3()">24</td>
+            <td onclick="notaTotal()">70</td>
+            <td onclick="faltas()">3</td>
+        </tr>
+        <tr>
+            <td onclick="msg()">Jane</td>
+            <td onclick="notaProva1()">26</td>
+            <td onclick="notaProva2()">20</td>
+            <td onclick="notaProva3()">24</td>
+            <td onclick="notaTotal()">70</td>
+            <td onclick="faltas()">1</td>
+        </tr>
+        <tr>
+            <td onclick="msg()">Jorge</td>
+            <td onclick="notaProva1()">25</td>
+            <td onclick="notaProva2()">19</td>
+            <td onclick="notaProva3()">29</td>
+            <td onclick="notaTotal()">73</td>
+            <td onclick="faltas()">0</td>
+        </tr>
+        <tr>
+            <td onclick="msg()">Marina</td>
+            <td onclick="notaProva1()">30</td>
+            <td onclick="notaProva2()">16</td>
+            <td onclick="notaProva3()">27</td>
+            <td onclick="notaTotal()">73</td>
+            <td onclick="faltas()">1</td>
+        </tr>
+        <tr>
+            <td>Media</td>
+            <td>71,8</td>
+        </tr>
+    </table>
+</body>
+<script>
+    function msg() {
+        alert("nome do aluno");
+    }
+    function notaProva1() {
+        alert("nota primeira prova");
+    }
+
+    function notaProva2() {
+        alert("nota segunda prova ");
+    }
+    function notaProva3() {
+        alert("nota terceira prova");
+    }
+    function notaTotal() {
+        alert("nota total")
+    }
+    function faltas() {
+        alert("faltas")
+    }
+</script>
+
+</html>
